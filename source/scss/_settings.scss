@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  color: $color-charade;
+  background-color: $color-soft-peach;
+}
+
+img {
+  // display: block;
+  max-width: 100%;
+  max-height: 100%;
+
+  // object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+
+  // max-width: 1200px;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

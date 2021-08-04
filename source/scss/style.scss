@@ -1,0 +1,10 @@
+//ГЛОБАЛЬНЫЕ ЭЛЕМЕНТЫ
+@import "./vendor/normalize";
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// КОМПОНЕНТЫ
+@import "./components/header";
+
