@@ -1,15 +1,17 @@
-'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+//Реализация открытия/закрытия меню в шапке и no-js
 
-pageHeader.classList.remove('page-header--nojs');
+const mainNav = document.querySelector('.main-header__nav');
+const menuBtn = document.querySelector('.main-header__burger');
+const menuClose = document.querySelector('.main-header__close');
+const menu = document.querySelector('.main-header__site-navigation');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
-  }
+console.log(mainNav)
+mainNav.classList.remove('main-header__nav--nojs');
+
+menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
+});
+
+menuClose.addEventListener('click', () => {
+  menu.classList.toggle('is-open');
 });

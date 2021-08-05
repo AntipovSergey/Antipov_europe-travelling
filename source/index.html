@@ -19,7 +19,44 @@
 </head>
 <body>
   <div class="site-container">
-    <h1>Добро пожаловать в Лигу А.</h1>
+    <header class="main-header">
+      <nav class="main-header__nav main-header__nav--nojs container">
+        <a class="main-header__logo">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="img/logo-tablet-mobile.svg">
+            <img class="main-header__img" src="img/logo.svg" width="58" height="22" alt="Логотип сайта Way">
+          </picture>
+        </a>
+        <div class="main-header__site-navigation">
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a class="main-header__link" href="sites">О путешествии</a>
+            </li>
+            <li class="main-header__item">
+              <a class="main-header__link" href="price">Цены</a>
+            </li>
+          </ul>
+          <button class="main-header__close btn-reset" type="button">
+            <span class="visually-hidden">Кнопка закрытия меню</span>
+          </button>
+        </div>
+        <a class="main-header__phone" href="tel:+749978468446">
+          <svg class="main-header__logo-phone" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+          +7 (499) -784-684-46
+        </a>
+        <button class="main-header__burger btn-reset" type="button">
+          <span class="visually-hidden">Кнопка меню-бургера</span>
+        </button>
+      </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
   </div>
   <script src="js/script.min.js"></script>
 </body>

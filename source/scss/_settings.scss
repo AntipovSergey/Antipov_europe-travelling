@@ -10,7 +10,15 @@ html {
 
 body {
   margin: 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-width: 320px;
+  min-height: 100vh;
   font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
   color: $color-charade;
   background-color: $color-soft-peach;
 }
@@ -46,11 +54,23 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 40px;
-
-  // max-width: 1200px;
+  max-width: 1230px;
+  padding: 36px 30px 32px;
+  width: 100%;
 }
 
 .visually-hidden {
   @include visually-hidden;
+}
+
+@include tablet {
+  .container {
+    padding: 0 21px;
+  }
+}
+
+@include mobile {
+  .container {
+    padding: 0 16px;
+  }
 }
