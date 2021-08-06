@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -54,8 +55,9 @@ ul {
 
 .container {
   margin: 0 auto;
-  max-width: 1230px;
-  padding: 36px 30px 32px;
+  // max-width: 1230px;
+  max-width: 1170px;
+  // padding: 36px 30px 32px;
   width: 100%;
 }
 

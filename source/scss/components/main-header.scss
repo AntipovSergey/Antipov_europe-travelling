@@ -33,21 +33,35 @@
     color: inherit;
   }
 
-  &__phone {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    align-items: center;
-    column-gap: 7px;
-    text-decoration: underline;
-    font-size: 18px;
-    line-height: 32px;
-    color: inherit;
+  &__link:hover,
+  &__phone:hover {
+    color: $color-bittersweet;
   }
 
-  &__link:hover,
-  &__phone:hover,
-  &__logo-phone:hover {
+  &__link:focus,
+  &__phone:focus {
     color: $color-bittersweet;
+  }
+
+  &__link:active,
+  &__phone:active {
+    color: $color-jaffa;
+  }
+
+  &__logo-phone {
+    stroke: $color-woodsmoke;
+  }
+
+  &__phone:hover .main-header__logo-phone {
+    stroke: $color-bittersweet;
+  }
+
+  &__phone:focus .main-header__logo-phone {
+    stroke: $color-bittersweet;
+  }
+
+  &__phone:active .main-header__logo-phone {
+    stroke: $color-jaffa;
   }
 
   &__burger {
@@ -59,6 +73,17 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.phone {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  column-gap: 7px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 32px;
+  color: inherit;
 }
 
 @include tablet {
@@ -113,7 +138,7 @@
       font-weight: 600;
       font-size: 20px;
       line-height: 140%;
-      color: $abbey;
+      color: $color-abbey;
     }
 
     &__link::before {
@@ -237,7 +262,7 @@
     &__nav--nojs .main-header__link {
       width: 200px;
       padding: 10px;
-      border: 1px solid $abbey;
+      border: 1px solid $color-abbey;
       background-color: transparent;
       height: inherit;
       text-align: center;
