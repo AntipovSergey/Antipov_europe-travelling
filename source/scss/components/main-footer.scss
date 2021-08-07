@@ -1,5 +1,5 @@
 .main-footer {
-  margin-top: 3500px;
+  margin-top: 500px;
   margin-bottom: 74px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -71,6 +71,11 @@
     fill: $color-mischka;
   }
 
+  &__mail:focus,
+  &__phone:focus {
+    color: $color-jaffa;
+  }
+
   &__mail:hover .main-footer__logo-mail {
     fill: $color-bittersweet;
   }
@@ -86,8 +91,6 @@
 
   &__phone {
     column-gap: 9px;
-    font-size: 16px;
-    color: $color-bittersweet;
   }
 
   &__logo-phone {
@@ -128,8 +131,6 @@
 
 @include tablet {
   .main-footer {
-    margin-top: 3500px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 54px;
 
@@ -181,8 +182,6 @@
 
 @include mobile {
   .main-footer {
-    margin-top: 3500px;
-    display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 26px;
 

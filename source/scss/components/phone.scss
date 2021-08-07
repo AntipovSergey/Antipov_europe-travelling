@@ -1,0 +1,21 @@
+.phone {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  column-gap: 7px;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 32px;
+  color: inherit;
+
+  &--mobile {
+    font-size: 16px;
+    color: $color-bittersweet;
+  }
+}
+
+@include tablet {
+  .main-header .phone {
+    display: none;
+  }
+}

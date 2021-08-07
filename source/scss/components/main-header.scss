@@ -1,5 +1,7 @@
 .main-header {
   &__nav {
+    padding-top: 4px;
+    padding-right: 5px;
     display: grid;
     grid-template-columns: 57px 1fr auto;
     column-gap: 70px;
@@ -24,7 +26,7 @@
 
   &__img {
     vertical-align: middle;
-    margin-left: 6px;
+    margin-left: 1px;
     margin-bottom: 3px;
   }
 
@@ -75,20 +77,11 @@
   }
 }
 
-.phone {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  align-items: center;
-  column-gap: 7px;
-  text-decoration: underline;
-  font-size: 18px;
-  line-height: 32px;
-  color: inherit;
-}
-
 @include tablet {
   .main-header {
     &__nav {
+      padding-top: 0;
+      padding-right: 21px;
       grid-template-columns: 57px 72px;
       justify-content: space-between;
       column-gap: 70px;
@@ -234,13 +227,17 @@
 
 @include mobile {
   .main-header {
+    &__nav {
+      padding-right: 26px;
+    }
+
     &__img {
       margin-top: 3px;
       margin-right: 1px;
     }
 
     &__burger {
-      margin-right: -16px;
+      margin-right: -26px;
       width: 50px;
     }
 
