@@ -1,0 +1,161 @@
+.price {
+  &__wrapper {
+    margin-bottom: 140px;
+    display: grid;
+    grid-template-columns: 370px 370px auto;
+    column-gap: 30px;
+  }
+
+  &__first-column {
+    position: relative;
+    margin-left: 64px;
+    grid-column: 3 / 4;
+  }
+
+  &__title {
+    margin-top: 113px;
+    margin-bottom: 47px;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    color: $color-charade;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    top: 217px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $color-bittersweet;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 61px;
+    font-size: 16px;
+    line-height: 170%;
+    color: $storm-gray;
+  }
+
+  &__span {
+    display: block;
+    margin-bottom: 13px;
+    margin-left: 46px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 34px;
+    color: $color-woodsmoke;
+  }
+
+  &__phone:hover {
+    color: $color-bittersweet;
+  }
+
+  &__phone:focus {
+    color: $color-jaffa;
+  }
+
+  &__phone:active {
+    color: $color-jaffa;
+  }
+
+  &__logo-phone {
+    stroke: $color-bittersweet;
+  }
+
+  &__phone:hover .price__logo-phone {
+    stroke: $color-bittersweet;
+  }
+
+  &__phone:focus .price__logo-phone {
+    stroke: $color-bittersweet;
+  }
+
+  &__phone:active .price__logo-phone {
+    stroke: $color-jaffa;
+  }
+
+  &__second-column {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 672px;
+  }
+
+  &__third-column {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 672px;
+  }
+}
+
+@include tablet {
+  .price {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+    }
+
+    &__first-column {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    &__title {
+      margin-top: 32px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 150%;
+      text-align: center;
+    }
+
+    &__title::before {
+      display: none;
+    }
+
+    &__subtitle {
+      text-align: center;
+      margin-bottom: 33px;
+    }
+
+    &__span {
+      display: block;
+      margin-bottom: 11px;
+      margin-left: -4px;
+      font-weight: 500;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__phone {
+      margin-right: 45px;
+      text-align: center;
+      font-size: 18px;
+      text-decoration: underline;
+      color: $color-bittersweet;
+    }
+
+    &__logo-phone {
+      stroke: none;
+    }
+
+    &__third-column,
+    &__second-column {
+      width: 288px;
+    }
+
+    &__second-column {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+      height: 672px;
+    }
+
+    &__third-column {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      height: 672px;
+    }
+  }
+}

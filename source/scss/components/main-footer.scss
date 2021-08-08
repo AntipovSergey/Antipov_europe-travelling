@@ -76,6 +76,11 @@
     color: $color-jaffa;
   }
 
+  &__link:active,
+  &__phone:active {
+    color: $color-jaffa;
+  }
+
   &__mail:hover .main-footer__logo-mail {
     fill: $color-bittersweet;
   }

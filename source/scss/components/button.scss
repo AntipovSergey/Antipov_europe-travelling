@@ -31,6 +31,18 @@
   color: $color-white;
 }
 
+.button--price {
+  padding-left: 68px;
+  padding-right: 70px;
+  width: 310px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
 @include tablet {
   .button {
     padding: 19px 0;

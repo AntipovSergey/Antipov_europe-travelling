@@ -12,6 +12,12 @@
     font-size: 16px;
     color: $color-bittersweet;
   }
+
+  &--price {
+    font-size: 20px;
+    text-decoration: none;
+    column-gap: 15px;
+  }
 }
 
 @include tablet {

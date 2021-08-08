@@ -1,0 +1,103 @@
+.rate {
+  position: relative;
+  padding: 40px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid $french-gray;
+  border-radius: 6px;
+
+  &__header {
+    margin-bottom: 27px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: $scarpa-flow;
+  }
+
+  &__price {
+    display: block;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 34px;
+    color: $scarpa-flow;
+  }
+
+  &--complex {
+    .rate__item:nth-child(2) {
+      margin-top: -10px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 59px;
+    width: 289px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-charade;
+  }
+
+  &__subtitle::before {
+    position: absolute;
+    content: "";
+    top: 192px;
+    left: 29px;
+    width: 310px;
+    height: 1px;
+    background-color: $french-gray;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    position: relative;
+    padding-left: 30px;
+    font-size: 16px;
+    line-height: 32px;
+    color: $color-charade;
+  }
+
+  &__item::before {
+    position: absolute;
+    content: "";
+    top: 8px;
+    left: -1px;
+    background-image: url("../../img/price-economic.svg");
+    width: 14px;
+    height: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__button {
+    margin-top: auto;
+  }
+
+  &:hover {
+    border: 1px solid $color-bittersweet;
+
+    .rate__title,
+    .rate__price {
+      color: $color-bittersweet;
+    }
+
+    .rate__subtitle::before {
+      background-color: $color-bittersweet;
+    }
+
+    .rate__item::before {
+      background-image: url("../../img/price-complex.svg");
+    }
+  }
+}
