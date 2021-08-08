@@ -1,0 +1,90 @@
+.blockquote {
+  padding: 30px;
+  position: relative;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 382px;
+  background-color: $color-white;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    letter-spacing: -0.691667px;
+    color: $color-charade;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    top: 77px;
+    left: 29px;
+    width: 68px;
+    height: 1px;
+    background-color: $color-bittersweet;
+  }
+
+  &__subtitle {
+    margin-bottom: 27px;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: -0.408333px;
+    color: $storm-gray;
+  }
+
+  &__author {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+
+  &__author-cite {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.466667px;
+    color: $color-charade;
+  }
+}
+
+@include mobile {
+  .blockquote {
+    padding-top: 30px;
+    padding-bottom: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 268px;
+    align-items: center;
+
+    &__title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &__title::before {
+      top: 65px;
+      left: 100px;
+    }
+
+    &__subtitle {
+      margin-top: 12px;
+      margin-bottom: 17px;
+      text-align: center;
+    }
+
+    &__author {
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+    }
+
+    &__author-cite {
+      padding-left: 8px;
+    }
+  }
+}

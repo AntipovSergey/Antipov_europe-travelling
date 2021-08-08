@@ -51,24 +51,24 @@
         </button>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <h1 class="visually-hidden">Сайт туристической компании Way</h1>
       <section class="promo">
         <div class="promo__wrapper container">
           <div class="promo__block">
             <h2 class="promo__title">Путешествие по Европе</h2>
             <p class="promo__subtitle">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <a class="promo__button button button--promo-desktop" href="#">Смотреть тур</a>
+            <a class="promo__button button button--promo-desktop" href="countries">Смотреть тур</a>
           </div>
         </div>
       </section>
       <section class="sites container">
-        <div class="sites__wrapper">
+        <div id="sites" class="sites__wrapper">
           <h2 class="sites__title">Места посещения</h2>
           <p class="sites__subtitle">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="sites__list">
             <li class="sites__item">
-              <a class="sites__link sites__link--greece" href="#">
+              <a class="sites__link sites__link--greece" href="greece">
                 <div class="sites__card">
                   <p class="sites__country">Греция</p>
                 </div>
@@ -76,7 +76,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--albany" href="#">
+              <a class="sites__link sites__link--albany" href="albany">
                 <div class="sites__card">
                   <p class="sites__country">Албания</p>
                 </div>
@@ -84,7 +84,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--macedony" href="#">
+              <a class="sites__link sites__link--macedony" href="macedony">
                 <div class="sites__card">
                   <p class="sites__country">Македония</p>
                 </div>
@@ -92,7 +92,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--montenegro" href="#">
+              <a class="sites__link sites__link--montenegro" href="montenegro">
                 <div class="sites__card">
                   <p class="sites__country">Черногория</p>
                 </div>
@@ -100,7 +100,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--croatia" href="#">
+              <a class="sites__link sites__link--croatia" href="croatia">
                 <div class="sites__card">
                   <p class="sites__country">Хорватия</p>
                 </div>
@@ -108,6 +108,130 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
           </ul>
+        </div>
+      </section>
+      <section class="country">
+        <div id="countries" class="country__wrapper container">
+          <h2 class="visually-hidden">Информация о стране</h2>
+          <ul class="country__list">
+            <li class="country__item country__item--selected">
+              <a class="country__link" href="greece">Греция</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="albany">Албания</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="macedony">Македония</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="montenegro">Черногория</a>
+            </li>
+            <li class="country__item">
+              <a class="country__link" href="croatia">Хорватия</a>
+            </li>
+          </ul>
+          <div class="country__example">
+            <article id="greece" class="country__article article article--greece country__article--shown">
+              <div class="article__first-part">
+                <h3 class="article__title">Греция</h3>
+                <p class="article__subtitle">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры. </p>
+                <button class="article__button button button--country btn-reset" type="button">купить тур сейчас</button>
+              </div>
+              <div class="article__second-part article__second-part--greece">
+                <blockquote class="article__blockquote blockquote">
+                  <h4 class="blockquote__title">Отзывы</h4>
+                  <p class="blockquote__subtitle">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
+                  <div class="blockquote__author">
+                    <picture>
+                      <source srcset="img/vlada.webp 1x, img/vlada@2x.webp 2x" type="image/webp">
+                      <img class="blockquote__author-img" src="img/vlada.png" srcset="img/vlada@2x.png" width="38" height="38" alt="Влада Голицына">
+                    </picture>
+                    <cite class="blockquote__author-cite">Влада Голицина</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </article>
+            <article id="albany" class="country__article article article--albany country__article--hidden">
+              <div class="article__first-part">
+                <h3 class="article__title">Албания</h3>
+                <p class="article__subtitle">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния. </p>
+                <button class="article__button button button--country btn-reset" type="button">купить тур сейчас</button>
+              </div>
+              <div class="article__second-part article__second-part--albany">
+                <blockquote class="article__blockquote blockquote">
+                  <h4 class="blockquote__title">Отзывы</h4>
+                  <p class="blockquote__subtitle">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :) </p>
+                  <div class="blockquote__author">
+                    <picture>
+                      <source srcset="img/marishka.webp 1x, img/marishka@2x.webp 2x" type="image/webp">
+                      <img class="blockquote__author-img" src="img/marishka.png.png" srcset="img/marishka@2x.png" width="38" height="38" alt="Влада Голицына">
+                    </picture>
+                    <cite class="blockquote__author-cite">Маришка</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </article>
+            <article id="macedony" class="country__article article article--macedony country__article--hidden">
+              <div class="article__first-part">
+                <h3 class="article__title">Македония</h3>
+                <p class="article__subtitle">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+                <button class="article__button button button--country btn-reset" type="button">купить тур сейчас</button>
+              </div>
+              <div class="article__second-part article__second-part--macedony">
+                <blockquote class="article__blockquote blockquote">
+                  <h4 class="blockquote__title">Отзывы</h4>
+                  <p class="blockquote__subtitle">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору. </p>
+                  <div class="blockquote__author">
+                    <picture>
+                      <source srcset="img/mike.webp 1x, img/mike@2x.webp 2x" type="image/webp">
+                      <img class="blockquote__author-img" src="img/mike.png" srcset="img/mike@2x.png" width="38" height="38" alt="Влада Голицына">
+                    </picture>
+                    <cite class="blockquote__author-cite">Михаил Кузьмин</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </article>
+            <article id="montenegro" class="country__article article article--montenegro country__article--hidden">
+              <div class="article__first-part">
+                <h3 class="article__title">Черногория</h3>
+                <p class="article__subtitle">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км. </p>
+                <button class="article__button button button--country btn-reset" type="button">купить тур сейчас</button>
+              </div>
+              <div class="article__second-part article__second-part--montenegro">
+                <blockquote class="article__blockquote blockquote">
+                  <h4 class="blockquote__title">Отзывы</h4>
+                  <p class="blockquote__subtitle">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую </p>
+                  <div class="blockquote__author">
+                    <picture>
+                      <source srcset="img/nastya.webp 1x, img/nastya@2x.webp 2x" type="image/webp">
+                      <img class="blockquote__author-img" src="img/nastya.png" srcset="img/nastya@2x.png" width="38" height="38" alt="Влада Голицына">
+                    </picture>
+                    <cite class="blockquote__author-cite">Анастасия Мей</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </article>
+            <article id="croatia" class="country__article article article--croatia country__article--hidden">
+              <div class="article__first-part">
+                <h3 class="article__title">Хорватия</h3>
+                <p class="article__subtitle">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+                <button class="article__button button button--country btn-reset" type="button">купить тур сейчас</button>
+              </div>
+              <div class="article__second-part article__second-part--croatia">
+                <blockquote class="article__blockquote blockquote">
+                  <h4 class="blockquote__title">Отзывы</h4>
+                  <p class="blockquote__subtitle">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                  <div class="blockquote__author">
+                    <picture>
+                      <source srcset="img/vlad.webp 1x, img/vlad@2x.webp 2x" type="image/webp">
+                      <img class="blockquote__author-img" src="img/vlad.png" srcset="img/vlad@2x.png" width="38" height="38" alt="Влада Голицына">
+                    </picture>
+                    <cite class="blockquote__author-cite">Владимир Мулицин</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </article>
+          </div>
         </div>
       </section>
     </main>

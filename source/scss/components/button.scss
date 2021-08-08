@@ -19,6 +19,18 @@
   text-align: left;
 }
 
+.button--country {
+  width: 250px;
+  padding-left: 37px;
+  padding-right: 37px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
 @include tablet {
   .button {
     padding: 19px 0;
@@ -28,10 +40,24 @@
     padding-left: 40px;
     width: 250px;
   }
+
+  .button--country {
+    padding-left: 19px;
+    padding-right: 19px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 @include mobile {
   .button--promo-desktop {
+    width: 288px;
+  }
+
+  .button--country {
+    padding-left: 70px;
+    padding-right: 71px;
     width: 288px;
   }
 }

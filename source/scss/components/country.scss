@@ -1,0 +1,67 @@
+.country {
+  &__list {
+    margin-bottom: 65px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 99px;
+    border-bottom: 1px solid $french-gray;
+    color: $french-gray;
+    width: 899px;
+  }
+
+  &__item--selected {
+    color: $color-bittersweet;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -0.415px;
+  }
+
+  &__article {
+    margin-bottom: 233px;
+  }
+
+  &__article--shown {
+    display: flex;
+  }
+
+  &__article--hidden {
+    display: none;
+  }
+}
+
+@include tablet {
+  .country {
+    background-image: none;
+
+    &::before {
+      display: none;
+    }
+
+    &__list {
+      margin-bottom: 30px;
+      overflow-x: scroll;
+    }
+
+    &__article {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include mobile {
+  .country {
+    &__list {
+      margin-bottom: 24px;
+    }
+
+    &__article {
+      margin-bottom: 45px;
+    }
+  }
+}

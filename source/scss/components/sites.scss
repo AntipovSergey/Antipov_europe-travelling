@@ -14,7 +14,7 @@
   &__title::before {
     position: absolute;
     content: "";
-    top: 190px;
+    top: 192px;
     left: 0;
     width: 229px;
     height: 4px;
@@ -53,6 +53,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: $color-charade;
   }
 
   &__link:hover {

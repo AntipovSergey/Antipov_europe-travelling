@@ -1,0 +1,202 @@
+.article {
+  position: relative;
+  display: flex;
+  gap: 100px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 17px;
+    left: -136px;
+    background-image: url("../../img/country-bg.png");
+    width: 1443.66px;
+    height: 1088px;
+    background-repeat: no-repeat;
+    z-index: -2;
+    background-size: contain;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-bg@2x.png");
+    }
+  }
+
+  &__title {
+    margin-top: 10px;
+    margin-bottom: 48px;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 90px;
+    letter-spacing: -1.245px;
+    color: $color-charade;
+  }
+
+  &__title::before {
+    position: absolute;
+    content: "";
+    top: 114px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: $color-bittersweet;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+    color: $storm-gray;
+    width: 370px;
+  }
+
+  &__second-part {
+    display: flex;
+    // background-image: url("../../img/country-greece.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 100%;
+    height: 596px;
+
+    // @media (min-resolution: 2dppx) {
+    //   background-image: url("../../img/country-greece@2x.jpg");
+    // }
+  }
+
+  &__second-part--greece {
+    background-image: url("../../img/country-greece.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-greece@2x.jpg");
+    }
+  }
+
+  &__second-part--albany {
+    background-image: url("../../img/country-albany.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-albany@2x.jpg");
+    }
+  }
+
+  &__second-part--macedony {
+    background-image: url("../../img/country-macedony.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-macedony@2x.jpg");
+    }
+  }
+
+  &__second-part--montenegro {
+    background-image: url("../../img/country-montenegro.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-montenegro@2x.jpg");
+    }
+  }
+
+  &__second-part--croatia {
+    background-image: url("../../img/country-croatia.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/country-croatia@2x.jpg");
+    }
+  }
+
+  &__blockquote {
+    margin: 0;
+    margin-left: auto;
+    z-index: 1;
+  }
+}
+
+@include tablet {
+  .article {
+    flex-direction: column;
+    gap: 30px;
+
+    &::before {
+      display: none;
+    }
+
+    &__first-part {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 30px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 0;
+    }
+
+    &__title::before {
+      display: none;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__second-part {
+      margin-left: -21px;
+      margin-right: -21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: auto;
+      padding-top: 81px;
+      background-size: 100% auto;
+      height: 415px;
+    }
+
+    &__blockquote {
+      margin: 0;
+      margin-top: 31px;
+    }
+  }
+}
+
+@include mobile {
+  .article {
+    gap: 50px;
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &__title::before {
+      display: none;
+    }
+
+    &__subtitle {
+      margin-bottom: 18px;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__second-part {
+      margin-left: -21px;
+      margin-right: -21px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: auto;
+      padding: 88px 26px 0;
+      background-size: 100% auto;
+      height: 415px;
+    }
+
+    &__blockquote {
+      margin: 0;
+      margin-top: 31px;
+    }
+  }
+}
