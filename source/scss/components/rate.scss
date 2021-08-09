@@ -109,6 +109,7 @@
     padding-right: 20px;
     padding-bottom: 0;
     align-items: center;
+    border-bottom: none;
 
     &__header {
       margin-bottom: 11px;
@@ -153,6 +154,10 @@
 
     &__button {
       margin-top: auto;
+    }
+
+    &:hover {
+      border-bottom: none;
     }
   }
 }

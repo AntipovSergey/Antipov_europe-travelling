@@ -43,6 +43,21 @@
   color: $color-white;
 }
 
+.button--form {
+  padding-top: 17px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 176px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+
 @include tablet {
   .button {
     padding: 19px 0;
@@ -69,6 +84,17 @@
     font-size: 10px;
     line-height: 12px;
   }
+
+  .button--form {
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 84px;
+    padding-right: 84px;
+    width: 250px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
 
 @include mobile {
@@ -79,6 +105,12 @@
   .button--country {
     padding-left: 70px;
     padding-right: 71px;
+    width: 288px;
+  }
+
+  .button--form {
+    padding-left: 103px;
+    padding-right: 103px;
     width: 288px;
   }
 }

@@ -1,0 +1,49 @@
+.questions {
+  &__wrapper {
+    margin-bottom: 160px;
+    display: flex;
+    background-image: url("../../img/form.jpg");
+    height: 455px;
+    background-position: left;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 844px;
+      background-image: url("../../img/form@2x.jpg");
+    }
+  }
+
+  &__block {
+    margin-left: auto;
+    align-self: center;
+  }
+}
+
+@include tablet {
+  .questions {
+    &__wrapper {
+      margin-bottom: 80px;
+      background-position: left;
+      background-size: cover;
+    }
+
+    &__block {
+      margin: 0 auto;
+    }
+  }
+}
+
+@include mobile {
+  .questions {
+    &__wrapper {
+      margin-bottom: 60px;
+      height: 441px;
+      background-image: none;
+      background-color: $color-soft-peach;
+    }
+
+    &__block {
+      margin: 0 auto;
+    }
+  }
+}

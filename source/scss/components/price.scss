@@ -93,6 +93,7 @@
 @include tablet {
   .price {
     &__wrapper {
+      margin-bottom: 110px;
       grid-template-columns: 1fr 1fr;
       column-gap: 0;
       justify-content: end;
@@ -168,6 +169,7 @@
 @include mobile {
   .price {
     &__wrapper {
+      margin-bottom: 50px;
       grid-template-columns: 1fr;
       justify-content: center;
       justify-items: center;
