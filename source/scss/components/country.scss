@@ -1,12 +1,16 @@
 .country {
+  &__wrapper {
+    position: relative;
+  }
+
   &__list {
     margin-bottom: 65px;
     padding-bottom: 15px;
     display: flex;
     flex-wrap: wrap;
     gap: 99px;
-    border-bottom: 1px solid $french-gray;
-    color: $french-gray;
+    border-bottom: 1px solid $color-french-gray;
+    color: $color-french-gray;
     width: 899px;
   }
 

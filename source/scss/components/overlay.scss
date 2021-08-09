@@ -1,0 +1,17 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba($color: $color-gray, $alpha: 0.5);
+  cursor: pointer;
+  z-index: 30;
+
+  &--shown {
+    display: flex;
+  }
+}

@@ -1,11 +1,17 @@
 .popup {
-  position: absolute;
+  position: fixed;
   display: flex;
   width: 728px;
   height: 444px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
   background-image: url("../../img/popup.jpg");
   background-position: left;
   background-repeat: no-repeat;
+  background-color: $color-white;
+  overflow: auto;
 
   @media (min-resolution: 2dppx) {
     background-size: 338px;
@@ -62,7 +68,12 @@
     height: 50px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 26px;
+    padding-left: 49px;
+    border: 1px solid $color-mischka;
+  }
+
+  &__input:invalid {
+    border: 1px solid $color-bittersweet;
   }
 
   &__tel,
@@ -71,7 +82,7 @@
   }
 
   &__email .popup__input {
-    padding-left: 15px;
+    padding-left: 14px;
   }
 
   &__tel {
@@ -88,6 +99,20 @@
     background-repeat: no-repeat;
     width: 6px;
     height: 7px;
+  }
+
+  &__tel::after {
+    position: absolute;
+    content: "+7";
+    top: 17px;
+    left: 26px;
+    width: 16px;
+    height: 19px;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-woodsmoke;
   }
 }
 

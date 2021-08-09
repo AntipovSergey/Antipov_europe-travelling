@@ -1,5 +1,6 @@
 .price {
   &__wrapper {
+    position: relative;
     margin-bottom: 140px;
     display: grid;
     grid-template-columns: 370px 370px auto;
@@ -36,7 +37,7 @@
     margin-bottom: 61px;
     font-size: 16px;
     line-height: 170%;
-    color: $storm-gray;
+    color: $color-storm-gray;
   }
 
   &__span {
@@ -142,6 +143,18 @@
     }
 
     &__logo-phone {
+      stroke: none;
+    }
+
+    &__phone:hover .price__logo-phone {
+      stroke: none;
+    }
+
+    &__phone:focus .price__logo-phone {
+      stroke: none;
+    }
+
+    &__phone:active .price__logo-phone {
       stroke: none;
     }
 

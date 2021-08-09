@@ -6,7 +6,7 @@
   width: 656px;
   height: 315px;
   background-color: $color-white;
-  box-shadow: 0 4px 30px $black-haze;
+  box-shadow: 0 4px 30px $color-black-haze;
   border-radius: 5px;
 
   &__title {
@@ -39,11 +39,17 @@
     height: 50px;
     padding-top: 16px;
     padding-bottom: 16px;
-    padding-left: 26px;
+    padding-left: 49px;
+    border: 1px solid $color-mischka;
   }
 
+  &__input:invalid {
+    border: 1px solid $color-bittersweet;
+  }
+
+
   &__email .form__input {
-    padding-left: 15px;
+    padding-left: 14px;
   }
 
   &__tel {
@@ -60,6 +66,20 @@
     background-repeat: no-repeat;
     width: 6px;
     height: 7px;
+  }
+
+  &__tel::after {
+    position: absolute;
+    content: "+7";
+    top: 17px;
+    left: 26px;
+    width: 16px;
+    height: 19px;
+    font-family: inherit;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-woodsmoke;
   }
 
   &__button {

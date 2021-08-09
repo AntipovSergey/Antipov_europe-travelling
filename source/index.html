@@ -15,7 +15,6 @@
   <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
   <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/ProximaNova-Bold.woff2" as="font">
 </head>
 <body>
   <div class="site-container">
@@ -30,10 +29,10 @@
         <div class="main-header__site-navigation">
           <ul class="main-header__list">
             <li class="main-header__item">
-              <a class="main-header__link" href="sites">О путешествии</a>
+              <a class="main-header__link" href="#sites">О путешествии</a>
             </li>
             <li class="main-header__item">
-              <a class="main-header__link" href="price">Цены</a>
+              <a class="main-header__link" href="#price">Цены</a>
             </li>
           </ul>
           <button class="main-header__close btn-reset" type="button">
@@ -58,7 +57,7 @@
           <div class="promo__block">
             <h2 class="promo__title">Путешествие по Европе</h2>
             <p class="promo__subtitle">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-            <a class="promo__button button button--promo-desktop" href="countries">Смотреть тур</a>
+            <a class="promo__button button button--promo-desktop" href="#countries">Смотреть тур</a>
           </div>
         </div>
       </section>
@@ -68,7 +67,7 @@
           <p class="sites__subtitle">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="sites__list">
             <li class="sites__item">
-              <a class="sites__link sites__link--greece" href="greece">
+              <a class="sites__link sites__link--greece" href="#greece">
                 <div class="sites__card">
                   <p class="sites__country">Греция</p>
                 </div>
@@ -76,7 +75,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--albany" href="albany">
+              <a class="sites__link sites__link--albany" href="#albany">
                 <div class="sites__card">
                   <p class="sites__country">Албания</p>
                 </div>
@@ -84,7 +83,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--macedony" href="macedony">
+              <a class="sites__link sites__link--macedony" href="#macedony">
                 <div class="sites__card">
                   <p class="sites__country">Македония</p>
                 </div>
@@ -92,7 +91,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--montenegro" href="montenegro">
+              <a class="sites__link sites__link--montenegro" href="#montenegro">
                 <div class="sites__card">
                   <p class="sites__country">Черногория</p>
                 </div>
@@ -100,7 +99,7 @@
               <a class="sites__card-link" href="#">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--croatia" href="croatia">
+              <a class="sites__link sites__link--croatia" href="#croatia">
                 <div class="sites__card">
                   <p class="sites__country">Хорватия</p>
                 </div>
@@ -235,7 +234,7 @@
         </div>
       </section>
       <section class="price">
-        <div class="price__wrapper container">
+        <div id="price" class="price__wrapper container">
           <div class="price__first-column">
             <h2 class="price__title">Цены</h2>
             <p class="price__subtitle">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
@@ -284,45 +283,20 @@
           <div class="questions__block form">
             <h3 class="form__title">У Вас остались вопросы?</h3>
             <p class="form__subtitle">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-            <form class="form__form" action="#" method="GET">
+            <form class="form__form" action="https://echo.htmlacademy.ru" method="GET">
               <p class="form__tel">
                 <label for="form-tel" class="visually-hidden">Введите 10 цифр номера</label>
-                <input class="form__input" type="tel" name="form-tel" id="form-tel" placeholder="Введите 10 цифр номера" required>
+                <input class="popup__input" type="tel" name="form-tel" id="form-tel"  placeholder="Введите 10 цифр номера" minlength="10" required>
               </p>
               <p class="form__email">
                 <label for="form-email" class="visually-hidden">Введите свой Email</label>
                 <input class="form__input" type="email" name="form-email" id="form-email" placeholder="E-mail">
               </p>
-              <button class="form__button btn-reset button button--form">Отправить</button>
+              <button class="form__button btn-reset button button--form" type="submit">Отправить</button>
             </form>
           </div>
         </div>
       </section>
-      <div class="popup popup--hidden">
-        <div class="popup__block">
-          <h2 class="popup__title">Купить тур </h2>
-          <form class="popup__form" action="#" method="GET">
-            <p class="popup__tel">
-              <label for="popup-tel" class="visually-hidden">Введите 10 цифр номера</label>
-              <input class="popup__input" type="tel" name="form-tel" id="popup-tel" placeholder="Введите 10 цифр номера" required>
-            </p>
-            <p class="popup__email">
-              <label for="popup-email" class="visually-hidden">Введите свой Email</label>
-              <input class="popup__input" type="email" name="popup-email" id="popup-email" placeholder="E-mail">
-            </p>
-            <button class="popup__button btn-reset button button--popup">Отправить</button>
-            <button class="popup__close btn-reset" type="button">
-              <span class="visually-hidden">Кнопка закрытия меню</span>
-            </button>
-          </form>
-        </div>
-      </div>
-      <div class="popup-success popup-success--hidden">
-        <h2 class="popup-success__title">Форма успешно отправлена, спасибо! :)</h2>
-        <button class="popup-success__close btn-reset" type="button">
-          <span class="visually-hidden">Кнопка закрытия меню</span>
-        </button>
-      </div>
     </main>
     <footer>
       <div class="main-footer container">
@@ -403,6 +377,33 @@
         </div>
       </div>
     </footer>
+    <div class="overlay">
+      <div class="popup popup--hidden">
+        <div class="popup__block">
+          <h2 class="popup__title">Купить тур </h2>
+          <form class="popup__form" action="https://echo.htmlacademy.ru" method="GET">
+            <p class="popup__tel">
+              <label for="popup-tel" class="visually-hidden">Введите 10 цифр номера</label>
+              <input class="popup__input" type="tel" name="popup-tel" id="popup-tel"  placeholder="Введите 10 цифр номера" minlength="10" required>
+            </p>
+            <p class="popup__email">
+              <label for="popup-email" class="visually-hidden">Введите свой Email</label>
+              <input class="popup__input" type="email" name="popup-email" id="popup-email" placeholder="E-mail">
+            </p>
+            <button class="popup__button btn-reset button button--popup" type="submit">Отправить</button>
+            <button class="popup__close btn-reset" type="button">
+              <span class="visually-hidden">Кнопка закрытия меню</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="popup-success popup-success--hidden">
+        <h2 class="popup-success__title">Форма успешно отправлена, спасибо! :)</h2>
+        <button class="popup-success__close btn-reset" type="submit">
+          <span class="visually-hidden">Кнопка закрытия меню</span>
+        </button>
+      </div>
+    </div>
   </div>
   <script src="js/script.min.js"></script>
 </body>
