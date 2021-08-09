@@ -101,3 +101,58 @@
     }
   }
 }
+
+@include tablet {
+  .rate {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+    align-items: center;
+
+    &__header {
+      margin-bottom: 11px;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    &--economic .rate__title {
+      letter-spacing: -1.5px;
+    }
+
+    &__title {
+      font-size: 24px;
+    }
+
+    &--economic .rate__price {
+      padding-right: 9px;
+    }
+
+    &__subtitle {
+      margin-top: 0;
+      margin-bottom: 30px;
+      width: 248px;
+      text-align: center;
+    }
+
+    &__subtitle::before {
+      top: 199px;
+      left: 19px;
+      width: 248px;
+    }
+
+    &__item:nth-child(3n+2) {
+      margin-bottom: -7px;
+    }
+
+    &--economic .rate__item:nth-child(3n+1) {
+      margin-bottom: -6px;
+    }
+
+    &__button {
+      margin-top: auto;
+    }
+  }
+}
