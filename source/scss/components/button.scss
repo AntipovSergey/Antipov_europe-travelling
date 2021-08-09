@@ -57,6 +57,20 @@
   color: $color-white;
 }
 
+.button--popup {
+  padding-top: 17px;
+  padding-bottom: 18px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 176px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
 
 @include tablet {
   .button {
@@ -109,6 +123,12 @@
   }
 
   .button--form {
+    padding-left: 103px;
+    padding-right: 103px;
+    width: 288px;
+  }
+
+  .button--popup {
     padding-left: 103px;
     padding-right: 103px;
     width: 288px;
