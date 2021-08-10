@@ -67,44 +67,44 @@
           <p class="sites__subtitle">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
           <ul class="sites__list">
             <li class="sites__item">
-              <a class="sites__link sites__link--greece" href="#greece">
+              <a class="sites__link sites__link--greece" href="#countries">
                 <div class="sites__card">
                   <p class="sites__country">Греция</p>
                 </div>
               </a>
-              <a class="sites__card-link" href="#">Смотреть подробнее</a>
+              <a class="sites__card-link" href="#countries">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--albany" href="#albany">
+              <a class="sites__link sites__link--albany" href="#countries">
                 <div class="sites__card">
                   <p class="sites__country">Албания</p>
                 </div>
               </a>
-              <a class="sites__card-link" href="#">Смотреть подробнее</a>
+              <a class="sites__card-link" href="#countries">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--macedony" href="#macedony">
+              <a class="sites__link sites__link--macedony" href="#countries">
                 <div class="sites__card">
                   <p class="sites__country">Македония</p>
                 </div>
               </a>
-              <a class="sites__card-link" href="#">Смотреть подробнее</a>
+              <a class="sites__card-link" href="#countries">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--montenegro" href="#montenegro">
+              <a class="sites__link sites__link--montenegro" href="#countries">
                 <div class="sites__card">
                   <p class="sites__country">Черногория</p>
                 </div>
               </a>
-              <a class="sites__card-link" href="#">Смотреть подробнее</a>
+              <a class="sites__card-link" href="#countries">Смотреть подробнее</a>
             </li>
             <li class="sites__item">
-              <a class="sites__link sites__link--croatia" href="#croatia">
+              <a class="sites__link sites__link--croatia" href="#countries">
                 <div class="sites__card">
                   <p class="sites__country">Хорватия</p>
                 </div>
               </a>
-              <a class="sites__card-link" href="#">Смотреть подробнее</a>
+              <a class="sites__card-link" href="#countries">Смотреть подробнее</a>
             </li>
           </ul>
         </div>
@@ -112,23 +112,25 @@
       <section class="country">
         <div id="countries" class="country__wrapper container">
           <h2 class="visually-hidden">Информация о стране</h2>
-          <ul class="country__list">
-            <li class="country__item country__item--selected">
-              <a class="country__link" href="greece">Греция</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="albany">Албания</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="macedony">Македония</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="montenegro">Черногория</a>
-            </li>
-            <li class="country__item">
-              <a class="country__link" href="croatia">Хорватия</a>
-            </li>
-          </ul>
+          <div class="country__scroller dragscroll">
+            <ul class="country__list">
+              <li class="country__item">
+                <a class="country__link" href="#greece">Греция</a>
+              </li>
+              <li class="country__item">
+                <a class="country__link" href="#albany">Албания</a>
+              </li>
+              <li class="country__item">
+                <a class="country__link" href="#macedony">Македония</a>
+              </li>
+              <li class="country__item">
+                <a class="country__link" href="#montenegro">Черногория</a>
+              </li>
+              <li class="country__item">
+                <a class="country__link" href="#croatia">Хорватия</a>
+              </li>
+            </ul>
+          </div>
           <div class="country__example">
             <article id="greece" class="country__article article article--greece country__article--shown">
               <div class="article__first-part">
@@ -163,7 +165,7 @@
                   <div class="blockquote__author">
                     <picture>
                       <source srcset="img/marishka.webp 1x, img/marishka@2x.webp 2x" type="image/webp">
-                      <img class="blockquote__author-img" src="img/marishka.png.png" srcset="img/marishka@2x.png" width="38" height="38" alt="Влада Голицына">
+                      <img class="blockquote__author-img" src="img/marishka.png.png" srcset="img/marishka@2x.png" width="38" height="38" alt="Маришка">
                     </picture>
                     <cite class="blockquote__author-cite">Маришка</cite>
                   </div>
@@ -183,7 +185,7 @@
                   <div class="blockquote__author">
                     <picture>
                       <source srcset="img/mike.webp 1x, img/mike@2x.webp 2x" type="image/webp">
-                      <img class="blockquote__author-img" src="img/mike.png" srcset="img/mike@2x.png" width="38" height="38" alt="Влада Голицына">
+                      <img class="blockquote__author-img" src="img/mike.png" srcset="img/mike@2x.png" width="38" height="38" alt="Михаил Кузьмин">
                     </picture>
                     <cite class="blockquote__author-cite">Михаил Кузьмин</cite>
                   </div>
@@ -203,7 +205,7 @@
                   <div class="blockquote__author">
                     <picture>
                       <source srcset="img/nastya.webp 1x, img/nastya@2x.webp 2x" type="image/webp">
-                      <img class="blockquote__author-img" src="img/nastya.png" srcset="img/nastya@2x.png" width="38" height="38" alt="Влада Голицына">
+                      <img class="blockquote__author-img" src="img/nastya.png" srcset="img/nastya@2x.png" width="38" height="38" alt="Анастасия Мей">
                     </picture>
                     <cite class="blockquote__author-cite">Анастасия Мей</cite>
                   </div>
@@ -223,7 +225,7 @@
                   <div class="blockquote__author">
                     <picture>
                       <source srcset="img/vlad.webp 1x, img/vlad@2x.webp 2x" type="image/webp">
-                      <img class="blockquote__author-img" src="img/vlad.png" srcset="img/vlad@2x.png" width="38" height="38" alt="Влада Голицына">
+                      <img class="blockquote__author-img" src="img/vlad.png" srcset="img/vlad@2x.png" width="38" height="38" alt="Владимир Мулицин">
                     </picture>
                     <cite class="blockquote__author-cite">Владимир Мулицин</cite>
                   </div>

@@ -47,9 +47,20 @@
       display: none;
     }
 
-    &__list {
-      margin-bottom: 30px;
+    &__scroller {
+      margin-bottom: 10px;
+      height: 61px;
+      overflow-y: hidden;
       overflow-x: scroll;
+    }
+
+    &__scroller::-webkit-scrollbar {
+      display: none;
+    }
+
+    &__item:hover,
+    &__item:focus {
+      color: $color-bittersweet;
     }
 
     &__article {
@@ -60,8 +71,8 @@
 
 @include mobile {
   .country {
-    &__list {
-      margin-bottom: 24px;
+    &__scroller {
+      margin-bottom: 3px;
     }
 
     &__article {
