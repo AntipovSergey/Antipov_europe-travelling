@@ -221,7 +221,7 @@ countrySiteCards.forEach((element, index) => {
   let EventListener = 'EventListener';
   let addEventListener = 'add'+EventListener;
   let removeEventListener = 'remove'+EventListener;
-  let newScrollX, newScrollY;
+  let newScrollX;
 
   let dragged = [];
   let reset = function(i, el) {
@@ -283,8 +283,3 @@ countrySiteCards.forEach((element, index) => {
 
   exports.reset = reset;
 }));
-
-
-//
-
-let c1 = document.querySelector('.sites__item')
