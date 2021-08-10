@@ -159,8 +159,9 @@ buttonForm.addEventListener('click', (evt) => {
   }
 })
 
-// переключение карточек стран
+//Переключение карточек стран
 const countryCards = document.querySelectorAll('.sites__link')
+const countrySiteCards = document.querySelectorAll('.sites__card-link')
 const countryLinks = document.querySelectorAll('.country__link');
 const countryArticles = document.querySelectorAll('.country__article');
 
@@ -190,6 +191,12 @@ countryLinks.forEach((element, index) => {
 });
 
 countryCards.forEach((element, index) => {
+  element.addEventListener('click', () => {
+  changeArticles(index);
+  });
+});
+
+countrySiteCards.forEach((element, index) => {
   element.addEventListener('click', () => {
   changeArticles(index);
   });
@@ -276,3 +283,8 @@ countryCards.forEach((element, index) => {
 
   exports.reset = reset;
 }));
+
+
+//
+
+let c1 = document.querySelector('.sites__item')

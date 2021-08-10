@@ -26,6 +26,11 @@
     letter-spacing: -0.415px;
   }
 
+  &__item:hover,
+  &__item:focus {
+    color: $color-bittersweet;
+  }
+
   &__article {
     margin-bottom: 233px;
   }
@@ -56,11 +61,6 @@
 
     &__scroller::-webkit-scrollbar {
       display: none;
-    }
-
-    &__item:hover,
-    &__item:focus {
-      color: $color-bittersweet;
     }
 
     &__article {
